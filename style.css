@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+  user-select: none;
+  list-style: none;
+}
+
+#content {
+  background-image: url(https://bartbzd.github.io/restaurant-page/81ed676f008bf7676288.png);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+button {
+  background: none;
+  border: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 40px 0px 0px 30px;
+}
+.logoImg {
+  width: auto;
+  height: 50px;
+  margin-left: 30px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  margin-left: 5%;
+  cursor: pointer;
+  user-select: none;
+  color: #343634;
+}
+
+.header-nav :hover {
+  color: #90fcc3;
+  transition: 0.5s;
+}
+
+.maintext {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.mainTextImg {
+  height: auto;
+  width: 50%;
+  margin-top: 160px;
+  animation: 0.3s ease-in-out 0s 1 simmer;
+}
+
+.mainTextBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  font-weight: 600;
+  color: #343634;
+  width: 160px;
+  height: 50px;
+  margin-top: 160px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  transition: 0.3s;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #90fcc3 0%,
+    #e0fea2 51%,
+    #90fcc3 100%
+  );
+  animation: 0.3s ease-in-out 0s 1 simmer;
+}
+
+.mainCupImg {
+  width: 47%;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  animation: growslide 0.5s;
+}
+
+/* about*/
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 625px;
+  height: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 25px 35px;
+  overflow: hidden;
+  backdrop-filter: blur(40px) brightness(1.15);
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  animation: 0.3s ease-out 0s 1 moveup;
+}
+
+.about-section p {
+  color: #464846;
+  padding-bottom: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.about-section p:first-child {
+  text-indent: 20px;
+}
+
+.about-title {
+  color: #343634;
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+
+.about-pic {
+  width: 100%;
+  border-radius: 30px;
+  margin: 10px 0;
+}
+
+/* menu*/
+
+.menu-section {
+  z-index: 1;
+  backdrop-filter: blur(40px) brightness(1.15);
+  -webkit-backdrop-filter: blur(40px) brightness(1.15);
+  -moz-backdrop-filter: blur(40px) brightness(1.15);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  width: 625px;
+  height: 675px;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  animation: 0.3s ease-out 0s 1 moveup;
+}
+
+.left {
+  background-color: rgba(18, 40, 32, 0.5215686275);
+  width: 35%;
+  display: flex;
+}
+
+.right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 35px;
+  margin-bottom: 15px;
+}
+
+.menu-titles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right p {
+  color: #464846;
+  padding-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.right h3 {
+  pointer-events: none;
+  user-select: none;
+}
+
+.contact-section {
+  color: #aebeae;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+  width: 625px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  background-color: rgba(18, 40, 32, 0.4588235294);
+  animation: 0.3s ease-in-out 0s 1 leftslide;
+}
+.contact-form {
+  display: flex;
+  color: #343634;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 57%;
+  animation: 0.3s ease-in-out 0s 1 rightslide;
+}
+
+.contact-text,
+.contact-form {
+  padding: 35px 35px;
+  backdrop-filter: blur(40px) brightness(1.15);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  border-radius: 40px;
+}
+
+.item-addres {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-addres h3 {
+  color: #343634;
+  margin-bottom: 6px;
+}
+
+.item-addres p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form {
+  margin-top: 5px;
+  
+}
+
+.form p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  padding-left: 5px;
+}
+.form input {
+  color: #d1fcb6;
+  background-color: rgba(101, 107, 103, 0.5019607843);
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline-width: 0;
+
+  margin-bottom: 4px;
+  padding-left: 5px;
+}
+.form textarea {
+  width: 100%;
+  height: 50%;
+  resize: none;
+
+  color: #d1fcb6;
+  background-color: rgba(101, 107, 103, 0.5019607843);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline-width: 0;
+}
+
+.button {
+  user-select: none;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  width: 115px;
+  height: 40px;
+  color: #343634;
+  transition: 0.3s;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #90fcc3 0%,
+    #e0fea2 51%,
+    #90fcc3 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+}
+
+.button:active {
+  transform: scale(0.97);
+}
